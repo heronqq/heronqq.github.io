@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="uk" data-title-uk="ТОВ «ВЕСТ БЕРІ» (WestBerry) — заморозка та експорт ягід" data-title-en="LLC \"WEST BERRY\" (WestBerry) — berry freezing and export" data-title-pl="Sp. z o.o. „WEST BERRY” (WestBerry) — mrożenie i eksport jagód">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТОВ «ВЕСТ БЕРІ» (WestBerry) — заморозка та експорт ягід</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --bg:#0b0f1a; --panel:#121827; --panel-2:#101521; --accent:#7cf3ff; --accent-2:#9b7bff; --accent-3:#40f4a3; --text:#e6eef7; --muted:#9fb3c8; --line:rgba(124,243,255,.2); --shadow:0 20px 60px rgba(9,15,30,.6); --radius:18px; }
+      * { box-sizing:border-box; margin:0; padding:0; }
+      body { font-family:"Space Grotesk",sans-serif; color:var(--text); background:radial-gradient(circle at 20% 20%, #1a2450 0%, transparent 40%), radial-gradient(circle at 80% 0%, #2d1a58 0%, transparent 35%), radial-gradient(circle at 80% 80%, #0e3a4a 0%, transparent 40%), var(--bg); min-height:100vh; line-height:1.6; }
+      a { color:inherit; text-decoration:none; }
+      img { max-width:100%; display:block; }
+      .wrap { max-width:1120px; margin:0 auto; padding:32px 20px 80px; }
+      header { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:18px 24px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(10,14,28,.6); backdrop-filter:blur(10px); box-shadow:var(--shadow); flex-wrap:wrap; }
+      .logo { display:flex; align-items:center; gap:14px; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+      .logo-mark { width:42px; height:42px; border-radius:14px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:grid; place-items:center; color:#04111d; font-weight:700; }
+      .nav { display:flex; gap:18px; font-size:14px; color:var(--muted); flex-wrap:wrap; }
+      .nav a { padding:6px 10px; border-radius:999px; border:1px solid transparent; }
+      .nav a.active, .nav a:hover { border-color:rgba(124,243,255,.35); background:rgba(12,18,32,.6); color:var(--text); }
+      .lang-switch { display:flex; gap:8px; align-items:center; }
+      .lang-btn { padding:6px 10px; border-radius:999px; border:1px solid rgba(124,243,255,.25); background:rgba(12,18,32,.6); color:var(--text); font-size:12px; font-weight:600; cursor:pointer; transition:transform .2s ease,border-color .2s ease,background .2s ease; }
+      .lang-btn:hover { transform:translateY(-1px); border-color:rgba(124,243,255,.5); }
+      .lang-btn.active { background:linear-gradient(120deg,var(--accent),var(--accent-3)); color:#051a1b; }
+      .hero { margin-top:36px; display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:stretch; }
+      .hero-card { padding:36px; border-radius:calc(var(--radius) + 4px); border:1px solid rgba(124,243,255,.25); background:linear-gradient(135deg, rgba(124,243,255,.12), rgba(155,123,255,.08)) border-box, var(--panel); box-shadow:var(--shadow); position:relative; overflow:hidden; }
+      .hero-card::after { content:""; position:absolute; inset:auto -40% -60% auto; width:280px; height:280px; background:radial-gradient(circle, rgba(64,244,163,.4), transparent 70%); }
+      h1 { font-size:clamp(28px,4vw,44px); line-height:1.2; margin-bottom:18px; }
+      .hero p { color:var(--muted); font-size:16px; margin-bottom:22px; }
+      .hero-actions { display:flex; flex-wrap:wrap; gap:14px; }
+      .btn { padding:12px 22px; border-radius:999px; border:1px solid transparent; font-weight:600; letter-spacing:.4px; display:inline-flex; gap:8px; align-items:center; }
+      .btn-primary { background:linear-gradient(120deg,var(--accent),var(--accent-3)); color:#051a1b; }
+      .btn-ghost { border-color:rgba(124,243,255,.4); color:var(--text); background:rgba(14,18,33,.6); }
+      .hero-grid { display:grid; grid-template-rows:1fr 1fr; gap:18px; }
+      .panel { padding:24px; border-radius:var(--radius); border:1px solid rgba(124,243,255,.15); background:var(--panel-2); box-shadow:var(--shadow); }
+      .panel h3 { font-size:18px; margin-bottom:12px; }
+      .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:18px; }
+      .stat { padding:16px; border-radius:14px; border:1px solid rgba(124,243,255,.2); text-align:center; background:rgba(14,18,33,.7); }
+      .stat strong { display:block; font-size:20px; color:var(--accent); }
+      section { margin-top:48px; animation:fadeUp .5s ease both; }
+      @keyframes fadeUp { from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
+      .section-title { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+      .section-title span { color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:2px; font-size:12px; }
+      .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+      .card { padding:22px; border-radius:var(--radius); border:1px solid rgba(124,243,255,.2); background:rgba(12,18,32,.8); }
+      .card h4 { margin-bottom:10px; font-size:18px; }
+      .list { list-style:none; display:grid; gap:10px; color:var(--muted); }
+      .image-card { border-radius:var(--radius); border:1px solid rgba(124,243,255,.2); overflow:hidden; background:rgba(12,18,32,.8); }
+      .image-card img { width:100%; height:220px; object-fit:cover; }
+      .image-card .caption { padding:14px 18px 18px; color:var(--muted); }
+      .cta { padding:32px; border-radius:var(--radius); background:linear-gradient(120deg, rgba(124,243,255,.2), rgba(155,123,255,.25)); border:1px solid rgba(124,243,255,.35); display:flex; justify-content:space-between; align-items:center; gap:24px; }
+      footer { margin-top:48px; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; border-top:1px solid rgba(124,243,255,.2); padding-top:20px; }
+      @media (max-width:960px){ .hero{grid-template-columns:1fr;} .hero-grid{grid-template-rows:auto;} .grid-3,.stats{grid-template-columns:1fr;} header{flex-direction:column; align-items:flex-start;} .cta{flex-direction:column; align-items:flex-start;} }
+      @media (max-width:600px){ .wrap{padding:20px 14px 64px;} header{padding:14px 16px;} .logo-mark{width:36px; height:36px;} .hero-card{padding:24px;} .hero-actions{gap:10px;} .image-card img{height:180px;} }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <div class="logo-mark"><img src="assets/logo.webp" alt="WestBerry logo" style="width:100%;height:100%;object-fit:contain;" /></div>
+          <div>
+            <div>ТОВ «ВЕСТ БЕРІ»</div>
+            <div style="font-size:12px;color:var(--muted)" data-i18n-uk="WestBerry · заморозка та експорт ягід" data-i18n-en="WestBerry · berry freezing and export" data-i18n-pl="WestBerry · mrożenie i eksport jagód">WestBerry · заморозка та експорт ягід</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="active" href="index.html" data-i18n-uk="Головна" data-i18n-en="Home" data-i18n-pl="Strona główna">Головна</a>
+          <a href="products.html" data-i18n-uk="Продукція" data-i18n-en="Products" data-i18n-pl="Produkty">Продукція</a>
+          <a href="services.html" data-i18n-uk="Послуги" data-i18n-en="Services" data-i18n-pl="Usługi">Послуги</a>
+          <a href="about.html" data-i18n-uk="Про компанію" data-i18n-en="About" data-i18n-pl="O firmie">Про компанію</a>
+          <a href="certs.html" data-i18n-uk="Сертифікати" data-i18n-en="Certificates" data-i18n-pl="Certyfikaty">Сертифікати</a>
+          <a href="contacts.html" data-i18n-uk="Контакти" data-i18n-en="Contacts" data-i18n-pl="Kontakt">Контакти</a>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="uk">UA</button>
+          <button class="lang-btn" data-lang="en">EU</button>
+          <button class="lang-btn" data-lang="pl">PL</button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <h1 data-i18n-uk="Експорт та заморозка ягід у футуристичному форматі" data-i18n-en="Export and freezing of berries in a futuristic format" data-i18n-pl="Eksport i mrożenie jagód w futurystycznym stylu">Експорт та заморозка ягід у футуристичному форматі</h1>
+          <p data-i18n-uk="ТОВ «ВЕСТ БЕРІ» працює з лісовими, культивованими та органічними ягодами, забезпечуючи заготівлю, заморозку та експорт. Головний пріоритет — стабільна якість і прозорий ланцюг постачання." data-i18n-en="WestBerry works with wild, cultivated, and organic berries, providing sourcing, freezing, and export. Our key priority is stable quality and a transparent supply chain." data-i18n-pl="WestBerry pracuje z jagodami leśnymi, uprawnymi i organicznymi, zapewniając zbiór, mrożenie i eksport. Priorytetem jest stabilna jakość i przejrzysty łańcuch dostaw.">ТОВ «ВЕСТ БЕРІ» працює з лісовими, культивованими та органічними ягодами, забезпечуючи заготівлю, заморозку та експорт. Головний пріоритет — стабільна якість і прозорий ланцюг постачання.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contacts.html" data-i18n-uk="Отримати пропозицію" data-i18n-en="Get an offer" data-i18n-pl="Otrzymaj ofertę">Отримати пропозицію</a>
+            <a class="btn btn-ghost" href="products.html" data-i18n-uk="Дивитися продукцію" data-i18n-en="View products" data-i18n-pl="Zobacz produkty">Дивитися продукцію</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>2016</strong><span data-i18n-uk="Рік заснування" data-i18n-en="Founded" data-i18n-pl="Rok założenia">Рік заснування</span></div>
+            <div class="stat"><strong>-18°C</strong><span data-i18n-uk="Режим зберігання" data-i18n-en="Storage temperature" data-i18n-pl="Temperatura przechowywania">Режим зберігання</span></div>
+            <div class="stat"><strong>EU</strong><span data-i18n-uk="Експорт у Європу" data-i18n-en="Export to Europe" data-i18n-pl="Eksport do Europy">Експорт у Європу</span></div>
+          </div>
+        </div>
+        <div class="hero-grid">
+          <div class="panel">
+            <h3 data-i18n-uk="Продукція" data-i18n-en="Products" data-i18n-pl="Produkty">Продукція</h3>
+            <ul class="list">
+              <li data-i18n-uk="• Заморожена продукція" data-i18n-en="• Frozen products" data-i18n-pl="• Produkty mrożone">• Заморожена продукція</li>
+              <li data-i18n-uk="• Свіжа сезонна продукція" data-i18n-en="• Fresh seasonal products" data-i18n-pl="• Świeże produkty sezonowe">• Свіжа сезонна продукція</li>
+              <li data-i18n-uk="• Органічні ягоди" data-i18n-en="• Organic berries" data-i18n-pl="• Jagody organiczne">• Органічні ягоди</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3 data-i18n-uk="Переваги" data-i18n-en="Advantages" data-i18n-pl="Atuty">Переваги</h3>
+            <ul class="list">
+              <li data-i18n-uk="• Власна концепція заготівлі та переробки" data-i18n-en="• Own sourcing and processing concept" data-i18n-pl="• Własna koncepcja skupu i przetwórstwa">• Власна концепція заготівлі та переробки</li>
+              <li data-i18n-uk="• Контроль якості на всіх етапах" data-i18n-en="• Quality control at every stage" data-i18n-pl="• Kontrola jakości na każdym etapie">• Контроль якості на всіх етапах</li>
+              <li data-i18n-uk="• Готовність до експортних аудитів" data-i18n-en="• Ready for export audits" data-i18n-pl="• Gotowość do audytów eksportowych">• Готовність до експортних аудитів</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title"><span data-i18n-uk="Галерея" data-i18n-en="Gallery" data-i18n-pl="Galeria">Галерея</span><h2 data-i18n-uk="Виробництво та якість" data-i18n-en="Production and quality" data-i18n-pl="Produkcja i jakość">Виробництво та якість</h2></div>
+        <div class="grid-3">
+          <div class="image-card"><img src="assets/gallery-1.jpg" alt="Лінія шокової заморозки" /><div class="caption" data-i18n-uk="Лінія IQF для швидкого заморожування ягід." data-i18n-en="IQF line for fast berry freezing." data-i18n-pl="Linia IQF do szybkiego mrożenia jagód.">Лінія IQF для швидкого заморожування ягід.</div></div>
+          <div class="image-card"><img src="assets/gallery-2.jpg" alt="Сортування ягід" /><div class="caption" data-i18n-uk="Оптичне сортування та контроль якості." data-i18n-en="Optical sorting and quality control." data-i18n-pl="Sortowanie optyczne i kontrola jakości.">Оптичне сортування та контроль якості.</div></div>
+          <div class="image-card"><img src="assets/gallery-3.jpg" alt="Складські потужності" /><div class="caption" data-i18n-uk="Складські камери з режимом -18°C." data-i18n-en="Cold storage rooms at -18°C." data-i18n-pl="Komory chłodnicze o temp. -18°C.">Складські камери з режимом -18°C.</div></div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h3 data-i18n-uk="Потрібна пропозиція або прайс?" data-i18n-en="Need an offer or price list?" data-i18n-pl="Potrzebujesz oferty lub cennika?">Потрібна пропозиція або прайс?</h3>
+          <p style="color:var(--muted)" data-i18n-uk="Напишіть або зателефонуйте — узгодимо обсяги та умови поставки." data-i18n-en="Write or call — we'll agree volumes and delivery terms." data-i18n-pl="Napisz lub zadzwoń — ustalimy wolumeny i warunki dostaw.">Напишіть або зателефонуйте — узгодимо обсяги та умови поставки.</p>
+        </div>
+        <div>
+          <div data-i18n-uk="Логіст: Ольга" data-i18n-en="Logistics: Olha" data-i18n-pl="Logistyka: Olha">Логіст: Ольга</div>
+          <div>+380 (67) 369 69 57</div>
+          <div>Westberry.logist@gmail.com</div>
+          <div>Viber · WhatsApp</div>
+        </div>
+      </section>
+
+      <footer>
+        <div data-i18n-uk="© 2026 ТОВ «ВЕСТ БЕРІ» (WestBerry). Всі права захищені." data-i18n-en="© 2026 LLC \"WEST BERRY\" (WestBerry). All rights reserved." data-i18n-pl="© 2026 Sp. z o.o. „WEST BERRY” (WestBerry). Wszelkie prawa zastrzeżone.">© 2026 ТОВ «ВЕСТ БЕРІ» (WestBerry). Всі права захищені.</div>
+        <div data-i18n-uk="Заморозка · Склади · Експорт" data-i18n-en="Freezing · Warehouses · Export" data-i18n-pl="Mrożenie · Magazyny · Eksport">Заморозка · Склади · Експорт</div>
+      </footer>
+    </div>
+
+    <script>
+      const setLang = (lang) => {
+        document.documentElement.lang = lang;
+        const title = document.documentElement.getAttribute('data-title-' + lang);
+        if (title) {
+          document.title = title;
+        }
+        document.querySelectorAll('[data-i18n-uk]').forEach((el) => {
+          const value = el.getAttribute('data-i18n-' + lang);
+          if (value !== null) {
+            el.textContent = value;
+          }
+        });
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        localStorage.setItem('lang', lang);
+      };
+
+      const savedLang = localStorage.getItem('lang') || 'uk';
+      setLang(savedLang);
+
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.addEventListener('click', () => setLang(btn.dataset.lang));
+      });
+    </script>
+  </body>
+</html>

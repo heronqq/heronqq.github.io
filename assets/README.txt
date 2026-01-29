@@ -1,0 +1,13 @@
+﻿Додайте фото у цю папку з назвами:
+- gallery-1.jpg
+- gallery-2.jpg
+- gallery-3.jpg
+- product-1.jpg
+- product-2.jpg
+- product-3.jpg
+- team-1.jpg
+- team-2.jpg
+- team-3.jpg
+- cert-1.jpg
+- cert-2.jpg
+- cert-3.jpg
